@@ -20,8 +20,13 @@ public class Event {
     private Date deadline;
     private Long target;
     private Long picking;   //сколько собрано на данный момент
+    private Boolean isModerated;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private User author;
+
+    public Boolean isModerated(String s) {
+        return s.equals("Moderated");
+    }
 }
