@@ -32,6 +32,7 @@ public class User implements UserDetails {
         this.phoneNumber = phoneNumber;
     }
 
+
     @Builder    //USER
     public User(String username, String password, String name, String surname, String patronymic, Character sex,
                 Date birth, String email, String phoneNumber) {
