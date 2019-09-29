@@ -1,7 +1,7 @@
 <#import "parts/page.ftl" as p>
 
 <@p.page>
-    <a href="event_moderation.ftl">Назад</a>
+    <a href="/event_moderation">Назад</a>
     <form action="/event_moderation" method="post">
         <label>Проверено<input type="checkbox" value="Moderated" name="state"></label>
         <input type="hidden" value="${event.id}" name="eventId">
